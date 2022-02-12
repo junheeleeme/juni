@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const PortfolioItems = ({post}) => {
     return(
-        <li className="portfolio-item relative rounded-lg overflow-hidden hover:scale-[1.02] duration-[300] ease-linear	 transition-[transform]">
+        <li className="portfolio-item relative rounded-lg overflow-hidden sm:hover:scale-[1.02] duration-[300] ease-linear	 transition-[transform]">
             <Link href={`/portfolio/${post.node.postId}`} scroll={false} passHref>
             <a className="">
                 <img className="w-full" src={post.node.featuredImage.node.mediaItemUrl}

@@ -19,12 +19,12 @@ const ModalNav = ({menu, pathname, closeModal}) => {
 
     return(
     <>
-        <ul className="modal text-xl modal">
+        <ul className="modal text-xl rounded-sm bg-[rgba(0,0,0,0.7)] ">
             {
                 menu.map((m, idx)=>
                 <li key={m.title + idx } className="modal block m-0 w-full text-center hover:bg-[rgba(0,0,0,0.5)]">
                     <Link href={m.path} passHref>
-                        <a className={`modal nav-item relative block py-2.5 text-white ${m.path === pathname ? 'active' : ''}`}>
+                        <a className={`modal nav-item relative block py-3 text-white ${m.path === pathname ? 'active' : ''}`}>
                             {m.title}
                         </a>
                     </Link>
