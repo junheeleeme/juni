@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import Script from 'next/script'
 import HeadInfo from '../components/HeadInfo'
+import GoogleAnalyticsHOC from '../components/GoogleAnalyticsHoc'
 import Layout from '../layout/Layout'
 import { useEffect } from 'react'
 
@@ -17,12 +18,14 @@ function MyApp({ Component, pageProps }) {
   
   return (
       <>
-        <HeadInfo/>
-        <Script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"/>
+        <GoogleAnalyticsHOC>
+          <HeadInfo/>
+          <Script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"/>
 
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </GoogleAnalyticsHOC>
       </>
   )
 }
