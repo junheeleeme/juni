@@ -3,7 +3,7 @@ import LazyImage from "./LazyImage"
 
 const PortfolioItems = ({post}) => {
     return(
-        <article className="portfolio-item relative rounded-lg overflow-hidden sm:hover:scale-[1.02] duration-[300] ease-linear transition-[transform] shadow-md">
+        <article className="portfolio-item relative w-full rounded-lg overflow-hidden sm:hover:scale-[1.02] duration-[300] ease-linear transition-[transform] shadow-md">
             <Link href={`/portfolio/${post.node.postId}`} scroll={false} passHref>
             <a className="">
                 <LazyImage src={post.node.featuredImage.node.mediaItemUrl}
