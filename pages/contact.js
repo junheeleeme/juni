@@ -75,8 +75,8 @@ const Contact = () => {
                     <li className="py-0.5 text-lg align-middle">
                         <HiOutlineHome className="inline-block text-2xl mr-1.5"/>
                         Tistory Blog 
-                        <Link href='https://juni-official.tistory.com/' target='_blank' passHref>
-                            <a className="inlone-block text-2xl ml-1">
+                        <Link href='https://juni-official.tistory.com/' passHref>
+                            <a target='_blank' className="inlone-block text-2xl ml-1">
                                 <AiOutlineLink className="inline-block m-0"/>
                             </a>
                         </Link>
@@ -84,8 +84,8 @@ const Contact = () => {
                     <li className="py-0.5 text-lg align-middle">
                         <AiFillGithub className="inline-block text-2xl mr-1.5"/>
                         GitHub 
-                        <Link href='https://github.com/junheeleeme' target='_blank' >
-                            <a className="inlone-block text-2xl ml-1">
+                        <Link href='https://github.com/junheeleeme' >
+                            <a target='_blank' className="inlone-block text-2xl ml-1">
                                 <AiOutlineLink className="inline-block m-0"/>
                             </a>
                         </Link>
