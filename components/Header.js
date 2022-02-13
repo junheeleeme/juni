@@ -98,10 +98,10 @@ const Header = () => {
         </header>
         <AnimatePresence exitBeforeEnter={true}>
             {modal && (
-                <motion.div layoutId='menu-modal' initial={ani.init} animate={ani.ani} exit={ ani.exit } transition={{ ease : "easeInOut", duration: 0.44 }}
-                className='mobile-menu block fixed w-[220px] z-[8888]'>
+                <motion.nav layoutId='menu-modal' initial={ani.init} animate={ani.ani} exit={ ani.exit } transition={{ ease : "easeInOut", duration: 0.44 }}
+                className='mobile-menu block fixed w-[220px] rounded-md overflow-hidden z-[8888]'>
                     <ModalNav menu={menu} pathname={pathname} toggleModal={toggleModal} closeModal={closeModal}/>
-                </motion.div>
+                </motion.nav>
                 )
             }
         </AnimatePresence>
@@ -117,7 +117,7 @@ const ani = {
         opacity: 0,
     },
     ani : {
-        top : '4.2rem', right: '16px',
+        top : '5rem', right: '16px',
         transform: 'rotate(0deg)',
         opacity: 1,
     },
