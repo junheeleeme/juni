@@ -16,6 +16,8 @@ const HeadInfo = ({title, keyword, content}) => {
             <meta name="description" content={headInfo._content}/>
             <meta name="keywords" content={headInfo._keyword} />
 
+            <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
+
             <meta property="og:title" content={headInfo._title} />
             <meta property="og:site_name" content={headInfo._title} />
             <meta property="og:url" content="https://www.juni-official.com/" />
