@@ -39,8 +39,8 @@ export default function Home({posts}) {
       </div>
       <div className="md:block more-btn-wrap sm:mt-6 sm:mb-4 ">
         <Link href='https://juni-official.tistory.com/' passHref>
-          <a target='_blank' className="more-btn hidden sm:hidden md:block text-center
-          border-gray-300 rounded-md border-2 border-gray-300 hover:border-gray-300 text-gray-400 hover:text-white dark:text-gray-300 hover:bg-gray-300 transition">
+          <a target='_blank' className="more-btn hidden sm:hidden md:block text-center 
+          border-gray-300 rounded-md border-2 border-gray-300 hover:border-gray-300 text-gray-400 hover:text-white dark:text-gray-300 dark:hover:text-gray-700 hover:bg-gray-300 transition">
             <span className="relative top-[1px] leading-9 h-9 text-[1.1rem]">더보기</span>
           </a>
         </Link>
