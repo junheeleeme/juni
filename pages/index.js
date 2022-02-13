@@ -19,7 +19,7 @@ export default function Home({posts}) {
           <li className="py-2 tracking-tighter">공부한 내용을 블로그에 기록하는 습관을 가지고 있습니다.</li>
         </ul>
         <div className="intro-image w-[240px] h-[240px] sm:w-[180px] sm:h-[180px] mx-3 my-3 overflow-hidden">
-          <img src='/image/profile.png' width="200" height='200' className="rounded-full"/>
+          <img src='/image/profile.png' alt="profile image" width="200" height='200' className="rounded-full"/>
         </div>
       </div>
 
