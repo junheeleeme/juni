@@ -18,7 +18,7 @@ const Skill = () => {
     return(
     <>
     <HeadInfo title="Skill" />
-        <div className="skill-wrap">
+        <section className="skill-wrap">
             
             <SubTitle txt={'Skill'} />
             <div className="flex justify-center items-center py-8">
@@ -101,7 +101,7 @@ const Skill = () => {
                     <SiFlutter color="#02c7fa"/>
                 </IconWrap>
             </div>
-        </div>
+        </section>
     </>
     )
 }

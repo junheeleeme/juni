@@ -23,28 +23,30 @@ export default function Home({posts}) {
         </div>
       </div>
 
-      <h3 className="text-xl font-bold py-2 mb-6">최근 포스트</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-4 py-4 px-4 sm:px-0">
-      {
-        posts &&
-        posts.map((p, idx)=> <BlogPost key={p.title + idx} post={p}/>)
-      }
-        <Link href='https://juni-official.tistory.com/' passHref>
-          <a target='_blank' className="more-btn flex sm:flex md:hidden justify-center items-center w-full h-full rounded-md border-2
-          text-gray-400 dark:text-gray-300 hover:border-gray-300 dark:hover:border-gray-500 hover:bg-gray-300 dark:hover:bg-gray-500 hover:text-white dark:hover:text-white transition">
-            <span className="relative top-[1px] leading-9 h-9 text-[1.1rem] sm:text-[1.2rem]">더보기</span>
-          </a>
-        </Link>
+      <section className="blog-wrap">
+        <h3 className="text-xl font-bold py-2 mb-6">최근 포스트</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-4 py-4 px-4 sm:px-0">
+        {
+          posts &&
+          posts.map((p, idx)=> <BlogPost key={p.title + idx} post={p}/>)
+        }
+          <Link href='https://juni-official.tistory.com/' passHref>
+            <a target='_blank' className="more-btn flex sm:flex md:hidden justify-center items-center w-full h-full rounded-md border-2
+            text-gray-400 dark:text-gray-300 hover:border-gray-300 dark:hover:border-gray-500 hover:bg-gray-300 dark:hover:bg-gray-500 hover:text-white dark:hover:text-white transition">
+              <span className="relative top-[1px] leading-9 h-9 text-[1.1rem] sm:text-[1.2rem]">더보기</span>
+            </a>
+          </Link>
 
-      </div>
-      <div className="md:block more-btn-wrap sm:mt-6 sm:mb-4 ">
-        <Link href='https://juni-official.tistory.com/' passHref>
-          <a target='_blank' className="more-btn hidden sm:hidden md:block text-center 
-          border-gray-300 rounded-md border-2 border-gray-300 hover:border-gray-300 text-gray-400 hover:text-white dark:text-gray-300 dark:hover:text-gray-700 hover:bg-gray-300 transition">
-            <span className="relative top-[1px] leading-9 h-9 text-[1.1rem]">더보기</span>
-          </a>
-        </Link>
-      </div>
+        </div>
+        <div className="md:block more-btn-wrap sm:mt-6 sm:mb-4 ">
+          <Link href='https://juni-official.tistory.com/' passHref>
+            <a target='_blank' className="more-btn hidden sm:hidden md:block text-center 
+            border-gray-300 rounded-md border-2 border-gray-300 hover:border-gray-300 text-gray-400 hover:text-white dark:text-gray-300 dark:hover:text-gray-700 hover:bg-gray-300 transition">
+              <span className="relative top-[1px] leading-9 h-9 text-[1.1rem]">더보기</span>
+            </a>
+          </Link>
+        </div>
+      </section>
 
     </>
   )

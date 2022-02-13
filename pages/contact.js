@@ -49,7 +49,7 @@ const Contact = () => {
         <> 
             <HeadInfo title='Contact'/>
             <SubTitle txt={'Contact'} />
-            <div className="contact-wrap pt-28">
+            <section className="contact-wrap pt-28">
                 <h3 className="text-5xl font-bold">
                     방문해 주셔서 감사합니다.
                 </h3>
@@ -91,7 +91,7 @@ const Contact = () => {
                         </Link>
                     </li>
                 </ul>
-            </div>
+            </section>
             <div className="absolute left-[300%] overflow-hidden w-1 h-1">
                 <input type="text" ref={phoneRef} defaultValue="010-5183-1652" readOnly/>
                 <input type="text" ref={emailRef} defaultValue="macjjuni@gmail.com" readOnly/>

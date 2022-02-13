@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const PortfolioItems = ({post}) => {
     return(
-        <li className="portfolio-item relative rounded-lg overflow-hidden sm:hover:scale-[1.02] duration-[300] ease-linear	 transition-[transform]">
+        <article className="portfolio-item relative rounded-lg overflow-hidden sm:hover:scale-[1.02] duration-[300] ease-linear transition-[transform] shadow-md">
             <Link href={`/portfolio/${post.node.postId}`} scroll={false} passHref>
             <a className="">
                 <img className="w-full" src={post.node.featuredImage.node.mediaItemUrl}
@@ -15,7 +15,7 @@ const PortfolioItems = ({post}) => {
                 </div>
             </a>
             </Link>
-        </li>  
+        </article>  
     )
 }
 
