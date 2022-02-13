@@ -9,11 +9,11 @@ const PortfolioItems = ({post}) => {
                 <LazyImage src={post.node.featuredImage.node.mediaItemUrl}
                     alt={post.node.featuredImage.node.altText === '' ? 'thumbnail_image' : post.node.featuredImage.node.altText}/>
 
-                <div className="item-cover absolute top-0 left-0 w-full h-full ">
-                    <p className="absolute font-bold bottom-0 left-0 w-full p-3 sm:p-5 text-2xl text-white">
+                <h3 className="item-cover absolute top-0 left-0 w-full h-full ">
+                    <p className="absolute font-bold bottom-0 left-0 w-full pl-5 pb-5 text-2xl text-white">
                         {post.node.title}
                     </p>
-                </div>
+                </h3>
             </a>
             </Link>
         </article>  
