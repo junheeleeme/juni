@@ -27,7 +27,7 @@ let current_blk;
 let level = 1;
 
 const virtual_block  = {
-    form : '',
+    form: '', 
     direction : 0,
     top : 0,
     left : 3
@@ -239,7 +239,7 @@ function generate_Block(){
     current_blk = next_blk;
 };
 
-function next_rendering(next){
+function next_rendering(next){ //다음 블록 미리보기
 
     
     const n_block = Object.keys(blocks)[next]; //블록 모양 확인
@@ -295,7 +295,7 @@ function dropBlock(){
     start = setInterval(() => {
         moveBlock('top', 1);
         esc = 1;
-    }, 15);
+    }, 18);
     setTimeout(()=>{
         prevent_key = 1;
     }, 200);
@@ -308,7 +308,7 @@ function gameOver(){
     esc = 0;
     prevent_key = 0;
     document.querySelector(".gameover").style.display = "block";
-
+    retry_btn.style.display = "block";
     // if((score/100).toFixed(0) === check.length.toString()){
     //     axios.get(`/rank?score=${score}`).then((res)=>{
             
@@ -320,15 +320,13 @@ function gameOver(){
     //             }, 700);
                 
     //         }else{ //랭킹 점수에 미달했을 경우
-                retry_btn.style.display = "block";
+    //             retry_btn.style.display = "block";
     //         }
 
     //     }).catch(err=>{
     //         console.log(err);
     //     });
     // }
-
-
 
 }
 
@@ -377,12 +375,13 @@ function gameOver(){
 // }
 
 // - EventHandling 이벤트 -
+
 start_btn.addEventListener('click', ()=>{//start
     start_wrap.style.top = "-100%";
     init();
 })
 
-
+//키보드 입력 체크
 document.addEventListener('keydown', e=>{
 
     const key_chk = esc === 1 ? true : false;
@@ -440,8 +439,8 @@ document.addEventListener('keydown', e=>{
     }
 })
 
+//일시정지
 stop.querySelector(".stop_btn").addEventListener('click', ()=>{
-
     clearInterval(start);
     start = setInterval(() => {
         esc = 1;
@@ -452,15 +451,16 @@ stop.querySelector(".stop_btn").addEventListener('click', ()=>{
 
 })
 
+//다시하기
 retry_btn.addEventListener('click', ()=>{
-    setRank();
+    // setRank();
     document.querySelector(".gameover").style.display = "none";
     board.innerHTML = "";
     init();
 })
 
-rankBtn.addEventListener('click', ()=>{
-    rankSubmit();
-})
+// rankBtn.addEventListener('click', ()=>{
+//     rankSubmit();
+// })
 
 
