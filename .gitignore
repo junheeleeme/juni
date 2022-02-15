@@ -14,7 +14,7 @@
 
 # production
 /build
-
+/public/portfolio
 
 # misc
 .DS_Store
