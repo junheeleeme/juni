@@ -140,7 +140,7 @@ a {
 .portfolio-content img{ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; margin: 0 auto }
 
 
-.portfolio-content p, .portfolio-content span{ font-size: 1.2rem; line-height: 1.5; padding: 0.74em 0; }
+.portfolio-content p, .portfolio-content span{ font-size: 1.2rem; line-height: 1.75; padding: 0.74em 0; }
 .portfolio-content li{ font-size: 1.12em; padding: 0.154em 0; line-height: 1.7; }
 .portfolio-content a{
   font-weight: bold;
