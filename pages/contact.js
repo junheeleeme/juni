@@ -49,7 +49,7 @@ const Contact = () => {
         <> 
             <HeadInfo title='Contact'/>
             <SubTitle txt={'Contact'} />
-            <section className="contact-wrap pt-28">
+            <section className="contact-wrap pt-16">
                 <h3 className="text-5xl font-bold leading-[4rem]">
                     방문해 주셔서<br className="lineBreak block sm:hidden"/> 감사합니다.
                 </h3>
