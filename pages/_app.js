@@ -21,7 +21,6 @@ function MyApp({ Component, pageProps }) {
         <GoogleAnalyticsHOC>
           <HeadInfo/>
           <Script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"/>
-
           <Layout>
             <Component {...pageProps} />
           </Layout>
