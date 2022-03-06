@@ -7,7 +7,7 @@ const BlogPost = ({post}) => {
             <Link href={`https://juni-official.tistory.com${post.link}`} passHref>
                 <a className="" target="_blank">
 
-                    <img src={post.thumb} alt={post.title} className="h-[300px] sm:h-[200px] w-full md:h-[135px] rounded-md"/>
+                    <img src={post.thumb} alt={post.title} className="h-[200px] sm:h-[230px] w-full md:h-[135px] rounded-md"/>
                     
                     <div className="relative h-18">
                         <h3 className="text-[1.15rem] md:text-[0.95rem] leading-6 pt-1.5 pb-0.5 pl-1 text-ellipsis whitespace-nowrap overflow-hidden">
