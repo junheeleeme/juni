@@ -97,7 +97,7 @@ a {
 }
 
 @media screen and (max-width: 640px){
-  .active{ background-color: #fff; }
+  .active{ background-color: rgb(226 232 240); }
   .dark .active{ background-color: rgba(0,0,0,0.22); }
   .active::after{
     width: 0;
