@@ -16,6 +16,8 @@ const HeadInfo = ({title, keyword, content}) => {
             <meta name="description" content={headInfo._content}/>
             <meta name="keywords" content={headInfo._keyword} />
 
+            <link rel="canonical" href="https://www.juni-official.com"/>
+
             <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
             
             <meta name="google-site-verification" content="5Ni7Pbu3nExe7K8bgEL31Ty3elQTv8COymd9Uc2Cog8" />
