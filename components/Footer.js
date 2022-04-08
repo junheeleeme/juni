@@ -8,8 +8,8 @@ const Footer = () => {
     }, []);
 
     return(
-        <footer className="footer absolute bottom-0 left-0 w-full py-1.5">
-            <div className="footer-wrap text-sm text-center text-gray-400">{_date}. juni-official All rights reserved</div>
+        <footer className="footer absolute bottom-0 left-0 w-full h-14 flex justify-center items-center text-gray-400 text-sm">
+            {_date}. juni-official All rights reserved
         </footer>
     )
 }

@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
 
     return(
         <div className="block min-h-[100vh] bg-slate-100 dark:bg-slate-800 transition-[background] duration-1000" > 
-            <div className="wrap relative max-w-screen-md min-h-[100vh] mx-auto pb-10 dark:text-white">
+            <div className="wrap relative max-w-screen-md min-h-[100vh] mx-auto pb-14 dark:text-white">
 
             <Header/>
             <NoSsrVoxel/>
