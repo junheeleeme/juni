@@ -47,8 +47,11 @@ const Skill = () => {
                 <IconWrap txt='Next.js'>
                     <SiNextdotjs color='#000'/>
                 </IconWrap>
-                <IconWrap txt='Styled Components'>
-                    <SiStyledcomponents color="#fe9ae4"/>
+                <IconWrap txt='Redux'>
+                    <SiRedux color="#764abc"/>
+                </IconWrap>
+                <IconWrap txt='Vue.js'>
+                    <SiVuedotjs color="#41b883"/>
                 </IconWrap>
                 <IconWrap txt='Node.js'>
                     <SiNodedotjs color="#8bc500"/>
@@ -59,9 +62,6 @@ const Skill = () => {
                 <IconWrap txt='CSS' >
                     <SiCss3 color="#007bc9"/>
                 </IconWrap>
-                <IconWrap txt='JQuery'>
-                    <SiJquery color="#2e68a8" />
-                </IconWrap>
             </div>
         
 
@@ -71,17 +71,17 @@ const Skill = () => {
                 사용해본 기술 스택
             </h3>
             <div className="main-skill flex  justify-around  flex-wrap items-center pb-10">
-                <IconWrap txt='AWS EC2'>
-                    <SiAmazonaws color="#ff9a02" />
-                </IconWrap>
-                <IconWrap txt='Redux'>
-                    <SiRedux color="#764abc"/>
-                </IconWrap>
                 <IconWrap txt='MongoDB'>
                     <SiMongodb color="#13aa52"/>
                 </IconWrap>
                 <IconWrap txt='MySQL'>
                     <SiMysql color="#01618a"/>
+                </IconWrap>
+                <IconWrap txt='AWS EC2'>
+                    <SiAmazonaws color="#ff9a02" />
+                </IconWrap>
+                <IconWrap txt='JQuery'>
+                    <SiJquery color="#2e68a8" />
                 </IconWrap>
             </div>
 
@@ -94,9 +94,7 @@ const Skill = () => {
                 <IconWrap txt='Svelte'>
                     <SiSvelte color="#ff3b00" />
                 </IconWrap>
-                <IconWrap txt='Vue.js'>
-                    <SiVuedotjs color="#41b883"/>
-                </IconWrap>
+
                 <IconWrap txt='Flutter'>
                     <SiFlutter color="#02c7fa"/>
                 </IconWrap>
